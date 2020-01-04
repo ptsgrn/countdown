@@ -1,0 +1,12 @@
+#output{
+   font-size:90px;
+   display: table-cell;
+   vertical-align: middle;
+   color:#fff;
+}
+body{
+   padding-left:25px;
+   display: table;
+   height:87vh;
+   background-color:#020202;
+}
