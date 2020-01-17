@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 10, 2020 00:00:00").getTime();
+var countDownDate = new Date("June 6, 2020 10:06:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -8,7 +8,7 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("output").innerHTML = '<span class="' + red(days) + zero(days) + "</span> <label>DAY</label><br>" + '<span class="' + red(hours) + zero(hours) + "</span> <label>HRS</label><br>" + '<span class="' + red(minutes) + zero(minutes) + "</span> <label>MIN</label><br>" + '<span class="' + red(seconds) + zero(seconds) + "</span> <label>SEC</label>";
+  document.getElementById("output").innerHTML = '<span class="' + red(days) + zero(days) + "<label>DAY</label></span><br>" + '<span class="' + red(hours) + zero(hours) + "<label>HRS</label></span> <br>" + '<span class="' + red(minutes) + zero(minutes) + "<label>MIN</label></span><br>" + '<span class="' + red(seconds) + zero(seconds) + "<label>SEC</label></span>";
   if (distance < 0) {
     clearInterval(x);
 document.getElementById("output").innerHTML = '<span class="ended all">00<br>00<br>00<br>00</span>';
